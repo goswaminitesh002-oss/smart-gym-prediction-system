@@ -1,9 +1,291 @@
-<div id="result" class="result-card">
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="score-circle">
-<div id="scoreValue">0</div>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Gym Prediction System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">
+
+🏋 AI FITNESS
+
 </div>
 
-<div id="report"></div>
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#predict">Prediction</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+
+Smart Gym Prediction System
+
+</h1>
+
+<p>
+
+AI Powered Workout • Diet • BMI • Fitness Prediction
+
+</p>
+
+<a href="#predict">
+
+<button>
+
+Start AI Prediction
+
+</button>
+
+</a>
 
 </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>
+
+Why Choose Our AI?
+
+</h2>
+
+<p>
+
+Our AI analyzes your BMI, body measurements and fitness goals to recommend the best workout and diet plan specially designed for you.
+
+</p>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features" id="features">
+
+<div class="card">
+
+<i class="fa-solid fa-dumbbell"></i>
+
+<h3>
+
+Workout Planner
+
+</h3>
+
+<p>
+
+Generate personalized workout plans.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<h3>
+
+BMI Calculator
+
+</h3>
+
+<p>
+
+Calculate BMI instantly.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-utensils"></i>
+
+<h3>
+
+Diet Planner
+
+</h3>
+
+<p>
+
+Daily meal recommendations.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-robot"></i>
+
+<h3>
+
+AI Prediction
+
+</h3>
+
+<p>
+
+Smart body type prediction.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- AI FORM -->
+
+<section id="predict" class="prediction">
+
+<h2>
+
+AI Fitness Prediction
+
+</h2>
+
+<form id="gymForm">
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input
+type="number"
+id="age"
+placeholder="Age"
+required>
+
+<select id="gender">
+
+<option>Male</option>
+
+<option>Female</option>
+
+</select>
+
+<input
+type="number"
+id="height"
+placeholder="Height (cm)"
+required>
+
+<input
+type="number"
+id="weight"
+placeholder="Weight (kg)"
+required>
+
+<select id="goal">
+
+<option>Gain Muscle</option>
+
+<option>Lose Weight</option>
+
+<option>Maintain Fitness</option>
+
+</select>
+
+<select id="experience">
+
+<option>Beginner</option>
+
+<option>Intermediate</option>
+
+<option>Advanced</option>
+
+</select>
+
+<button
+type="button"
+onclick="predict()">
+
+Analyze Fitness
+
+</button>
+
+</form>
+
+<div id="result"></div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>
+
+Contact
+
+</h2>
+
+<p>
+
+Developer : Nitesh Goswami
+
+</p>
+
+<p>
+
+Email : your@email.com
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Smart Gym Prediction System
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
